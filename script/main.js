@@ -22,3 +22,37 @@ document.getElementById("newDate").innerText = formatDate
 
 
 
+document.getElementById("Completed").addEventListener("click", function () {
+    alert("Board updated Successfully");
+    const button = document.getElementById("Completed");
+    button.disabled = true;
+    button.style.backgroundColor = "gray";
+
+   document.getElementById
+
+   document.getElementById("sms").innerHTML=`
+   <p class="bg-white p-4 w-fit rounded-md">You have completed the task Fix mobile Button issue at 12.30 Am</p>
+   `;
+
+   document.getElementById("clearSms").addEventListener("click", function () {
+    document.getElementById("sms").innerHTML = ""; 
+});
+    
+})
+document.getElementById("Complete").addEventListener("click", function () {
+    alert("Board updated Successfully");
+    const button = document.getElementById("Complete");
+    button.disabled = true;
+    button.style.backgroundColor = "gray";
+
+
+   document.getElementById("sm").innerHTML=`
+   <p class="bg-white p-4 w-fit rounded-md">You have completed the task Add pay Success Modal at 1.30 AM</p>
+   `;
+   document.getElementById("clearSms").addEventListener("click", function () {
+    document.getElementById("sm").innerHTML = ""; 
+});
+    
+})
+
+
