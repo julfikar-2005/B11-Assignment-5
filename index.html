@@ -21,7 +21,8 @@
                         <img class="size-10  p-2 rounded" src="./assets/checkbox.png" alt="">
                         <h1>23</h1>
                     </div>
-                    <button id="btn-color" class="bg-[#F4F7FF] p-3 rounded-full"><img src="./assets/theme-btn.png" alt="click"></button>
+                    <button id="btn-color" class="bg-[#F4F7FF] p-3 rounded-full"><img src="./assets/theme-btn.png"
+                            alt="click"></button>
                 </div>
             </nav>
         </header>
@@ -38,11 +39,11 @@
             </div>
             <div class="flex items-center bg-gradient-to-r from-blue-600 to-blue-300 text-white rounded-lg p-4">
                 <img class="size-14" src="./assets/board.png" alt="">
-                <p class="text-2xl font-semibold">Discover Something
-                     New Today!
+                <p id="Discover" class="text-2xl font-semibold">Discover Something
+                    New Today!
                 </p>
             </div>
-            <div class="flex items-center gap-3 bg-[#F4F7FF] p-4 rounded-lg ">
+            <div class="flex items-center gap-3 bg-[#F4F7FF] p-4 rounded-lg">
                 <img class="size-8" src="./assets/calender.png" alt="">
                 <h3 id="newDate">Wed <br>
                     Jul 28 2025 </h3>
@@ -52,14 +53,41 @@
                     <img class="size-7" src="./assets/activity.png" alt="">
                     <h2 class="text-xl">Activity Log</h2>
                 </div>
-               <div class="flex justify-center"> 
-                <button class="bg-blue-600 px-5 py-2 rounded-md text-white">Clear History</button>
-            </div>
+                <div class="flex justify-center">
+                    <button class="bg-blue-600 px-5 py-2 rounded-md text-white">Clear History</button>
+
+                </div>
+                <div id="sms" class="my-5">
+
+                </div>
+                <div id="sm" class="my-5">
+
+                </div>
             </div>
 
-            <div class="bg-[#F4F7FF] p-4 rounded-xl">
+            <div class="all-btn bg-[#F4F7FF] p-4 rounded-xl">
                 <h4 class="px-8 py-2 bg-white w-fit rounded-md">ShopEase</h4>
                 <h1 class="my-3 text-2xl">Fix Mobile Button Issue </h1>
+                <p class="px-2 py-2 bg-white w-fit rounded-md mb-4 text-gray-400">Debug using Chrome DevTools, check for
+                    overlapping...</p>
+                <div class="flex justify-between">
+                    <p><span class="text-gray-500">Deadline</span><br><span class="font-bold">21 March 2025</span></p>
+                    <button id="Completed" class="bg-blue-600 py-1 px-5 rounded-lg">Completed</button>
+                </div>
+            </div>
+            <div class="all-btn bg-[#F4F7FF] p-4 rounded-xl">
+                <h4 class="px-8 py-2 bg-white w-fit rounded-md">CloudSync</h4>
+                <h1 class="my-3 text-2xl">Add Dark Mode</h1>
+                <p class="px-2 py-2 bg-white w-fit rounded-md mb-4 text-gray-400">Store the user's preference in
+                    localStorage, update CSS vari...</p>
+                <div class="flex justify-between">
+                    <p><span class="text-gray-500">Deadline</span><br><span class="font-bold">21 March 2025</span></p>
+                    <button id="Complete" class="bg-blue-600 py-1 px-5 rounded-lg">Completed</button>
+                </div>
+            </div>
+            <div class="all-btn bg-[#F4F7FF] p-4 rounded-xl">
+                <h4 class="px-8 py-2 bg-white w-fit rounded-md">SwiftPay</h4>
+                <h1 class="my-3 text-2xl">Optimize Home page </h1>
                 <p class="px-2 py-2 bg-white w-fit rounded-md mb-4 text-gray-400">Debug using Chrome DevTools, check for
                     overlapping...</p>
                 <div class="flex justify-between">
@@ -67,43 +95,27 @@
                     <button class="bg-blue-600 py-1 px-5 rounded-lg">Completed</button>
                 </div>
             </div>
-            <div class="bg-[#F4F7FF] p-4 rounded-xl">
-                <h4 class="px-8 py-2 bg-white w-fit rounded-md">CloudSync</h4>
-                <h1 class="my-3 text-2xl">Add Dark Mode</h1>
-                <p class="px-2 py-2 bg-white w-fit rounded-md mb-4 text-gray-400">Store the user's preference in localStorage, update CSS vari...</p>
-                <div class="flex justify-between">
-                    <p><span class="text-gray-500">Deadline</span><br><span class="font-bold">21 March 2025</span></p>
-                    <button class="bg-blue-600 py-1 px-5 rounded-lg">Completed</button>
-                </div>
-            </div>
-            <div class="bg-[#F4F7FF] p-4 rounded-xl">
-                <h4 class="px-8 py-2 bg-white w-fit rounded-md">SwiftPay</h4>
-                <h1 class="my-3 text-2xl">Optimize  Home page </h1>
-                <p class="px-2 py-2 bg-white w-fit rounded-md mb-4 text-gray-400">Debug using Chrome DevTools, check for overlapping...</p>
-                <div class="flex justify-between">
-                    <p><span class="text-gray-500">Deadline</span><br><span class="font-bold">21 March 2025</span></p>
-                    <button class="bg-blue-600 py-1 px-5 rounded-lg">Completed</button>
-                </div>
-            </div>
-            <div class="bg-[#F4F7FF] p-4 rounded-xl">
+            <div class="all-btn bg-[#F4F7FF] p-4 rounded-xl">
                 <h4 class="px-8 py-2 bg-white w-fit rounded-md">Meta</h4>
                 <h1 class="my-3 text-2xl">Add new emoji 🤲</h1>
-                <p class="px-2 py-2 bg-white w-fit rounded-md mb-4 text-gray-400">Debug using Chrome DevTools, check for overlapping...</p>
+                <p class="px-2 py-2 bg-white w-fit rounded-md mb-4 text-gray-400">Debug using Chrome DevTools, check for
+                    overlapping...</p>
                 <div class="flex justify-between">
                     <p><span class="text-gray-500">Deadline</span><br><span class="font-bold">21 March 2025</span></p>
                     <button class="bg-blue-600 py-1 px-5 rounded-lg">Completed</button>
                 </div>
             </div>
-            <div class="bg-[#F4F7FF] p-4 rounded-xl">
+            <div class="all-btn bg-[#F4F7FF] p-4 rounded-xl">
                 <h4 class="px-8 py-2 bg-white w-fit rounded-md">Google LLC</h4>
                 <h1 class="my-3 text-2xl">Integrate OpenAI API </h1>
-                <p class="px-2 py-2 bg-white w-fit rounded-md mb-4 text-gray-400">Debug using Chrome DevTools, check for overlappin...</p>
+                <p class="px-2 py-2 bg-white w-fit rounded-md mb-4 text-gray-400">Debug using Chrome DevTools, check for
+                    overlappin...</p>
                 <div class="flex justify-between">
                     <p><span class="text-gray-500">Deadline</span><br><span class="font-bold">21 March 2025</span></p>
                     <button class="bg-blue-600 py-1 px-5 rounded-lg">Completed</button>
                 </div>
             </div>
-            <div class="bg-[#F4F7FF] p-4 rounded-xl">
+            <div class="all-btn bg-[#F4F7FF] p-4 rounded-xl">
                 <h4 class="px-8 py-2 bg-white w-fit rounded-md">Glassdoar</h4>
                 <h1 class="my-3 text-2xl">Improve Job searching </h1>
                 <p class="px-2 py-2 bg-white w-fit rounded-md mb-4 text-gray-400">Debug using Chrome DevTools, check for
@@ -115,8 +127,8 @@
             </div>
         </div>
     </section>
-    
-<script src="./script/main.js"></script>
+
+    <script src="./script/main.js"></script>
 </body>
 
 </html>
