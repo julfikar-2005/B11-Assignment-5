@@ -84,5 +84,36 @@ document.getElementById("four-btn").addEventListener("click", function () {
 });
     
 })
+document.getElementById("five-btn").addEventListener("click", function () {
+    alert("Board updated Successfully");
+    const button = document.getElementById("five-btn");
+    button.disabled = true;
+    button.style.backgroundColor = "gray";
+
+
+   document.getElementById("five").innerHTML=`
+   <p class="bg-white p-4 w-fit rounded-md">You have completed the task Integrate OpenAI API at 2.00 AM</p>
+   `;
+   document.getElementById("clearSms").addEventListener("click", function () {
+    document.getElementById("five").innerHTML = ""; 
+});
+    
+})
+document.getElementById("six-btn").addEventListener("click", function () {
+    alert("Board updated Successfully");
+    alert("congrates!!You have completed all the current task");
+    const button = document.getElementById("six-btn");
+    button.disabled = true;
+    button.style.backgroundColor = "gray";
+
+
+   document.getElementById("six").innerHTML=`
+   <p class="bg-white p-4 w-fit rounded-md">You have completed the task Improve Job searching at 3.00 AM</p>
+   `;
+   document.getElementById("clearSms").addEventListener("click", function () {
+    document.getElementById("six").innerHTML = ""; 
+});
+    
+})
 
 
