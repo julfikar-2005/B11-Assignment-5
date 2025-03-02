@@ -54,5 +54,35 @@ document.getElementById("Complete").addEventListener("click", function () {
 });
     
 })
+document.getElementById("three-btn").addEventListener("click", function () {
+    alert("Board updated Successfully");
+    const button = document.getElementById("three-btn");
+    button.disabled = true;
+    button.style.backgroundColor = "gray";
+
+
+   document.getElementById("three").innerHTML=`
+   <p class="bg-white p-4 w-fit rounded-md">You have completed the task Add new reaction at 1.35 AM</p>
+   `;
+   document.getElementById("clearSms").addEventListener("click", function () {
+    document.getElementById("three").innerHTML = ""; 
+});
+    
+})
+document.getElementById("four-btn").addEventListener("click", function () {
+    alert("Board updated Successfully");
+    const button = document.getElementById("four-btn");
+    button.disabled = true;
+    button.style.backgroundColor = "gray";
+
+
+   document.getElementById("four").innerHTML=`
+   <p class="bg-white p-4 w-fit rounded-md">You have completed the task Add new emoji at 1.45 AM</p>
+   `;
+   document.getElementById("clearSms").addEventListener("click", function () {
+    document.getElementById("four").innerHTML = ""; 
+});
+    
+})
 
 
