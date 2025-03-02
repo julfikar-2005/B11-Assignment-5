@@ -1,7 +1,8 @@
+// Next page 
 document.getElementById("Discover").addEventListener("click", function () {
     window.location.href = "main.html";
 });
-
+// rendome color add
 const colors = ["black", "Cyan", "green", "Gray ", "orange", "pink", "yellow", "red", "Sky Blue"];
 let number = 0;
 document.getElementById("btn-color").addEventListener("click", function () {
@@ -9,7 +10,7 @@ document.getElementById("btn-color").addEventListener("click", function () {
     number = (number + 1) % colors.length;
 })
 
-
+// live time setap
 const today = new Date();
 const newDateToday = {
     weekday: 'long',
@@ -18,102 +19,160 @@ const newDateToday = {
     day: 'numeric'
 };
 const formatDate = today.toLocaleDateString("en-US", newDateToday);
-document.getElementById("newDate").innerText = formatDate
+document.getElementById("newDate").innerText = formatDate;
 
 
-
+// First button part
 document.getElementById("Completed").addEventListener("click", function () {
     alert("Board updated Successfully");
     const button = document.getElementById("Completed");
     button.disabled = true;
     button.style.backgroundColor = "gray";
 
-   document.getElementById
+    const totalAssigned = document.getElementById('total').innerText;
+    const convertTotalAssigned = parseInt(totalAssigned);
+    const updatedTotalAssigned = convertTotalAssigned - 1;
+    document.getElementById('total').innerText = updatedTotalAssigned;
 
-   document.getElementById("sms").innerHTML=`
+    const navTotalAssigned = document.getElementById('addTotal').innerText; 
+    const convertnavTotalAssigned = parseInt(navTotalAssigned);
+    const updatedNavTotalAssigned = convertnavTotalAssigned + 1;
+    document.getElementById('addTotal').innerText = updatedNavTotalAssigned;
+
+    document.getElementById("sms").innerHTML = `
    <p class="bg-white p-4 w-fit rounded-md">You have completed the task Fix mobile Button issue at 12.30 Am</p>
    `;
-
-   document.getElementById("clearSms").addEventListener("click", function () {
-    document.getElementById("sms").innerHTML = ""; 
-});
-    
+    document.getElementById("clearSms").addEventListener("click", function () {
+        document.getElementById("sms").innerHTML = "";
+    });
 })
-document.getElementById("Complete").addEventListener("click", function () {
+// Second button part
+
+    document.getElementById("Complete").addEventListener("click", function () {
     alert("Board updated Successfully");
     const button = document.getElementById("Complete");
     button.disabled = true;
     button.style.backgroundColor = "gray";
 
+    const totalAssigned = document.getElementById('total').innerText;
+    const convertTotalAssigned = parseInt(totalAssigned);
+    const updatedTotalAssigned = convertTotalAssigned - 1;
+    document.getElementById('total').innerText = updatedTotalAssigned;
 
-   document.getElementById("sm").innerHTML=`
+    const navTotalAssigned = document.getElementById('addTotal').innerText; 
+    const convertnavTotalAssigned = parseInt(navTotalAssigned);
+    const updatedNavTotalAssigned = convertnavTotalAssigned + 1;
+    document.getElementById('addTotal').innerText = updatedNavTotalAssigned;
+
+    document.getElementById("sm").innerHTML = `
    <p class="bg-white p-4 w-fit rounded-md">You have completed the task Add pay Success Modal at 1.30 AM</p>
    `;
-   document.getElementById("clearSms").addEventListener("click", function () {
-    document.getElementById("sm").innerHTML = ""; 
-});
-    
+    document.getElementById("clearSms").addEventListener("click", function () {
+        document.getElementById("sm").innerHTML = "";
+    });  
 })
-document.getElementById("three-btn").addEventListener("click", function () {
+// Third button part
+
+    document.getElementById("three-btn").addEventListener("click", function () {
     alert("Board updated Successfully");
     const button = document.getElementById("three-btn");
     button.disabled = true;
     button.style.backgroundColor = "gray";
 
+    const totalAssigned = document.getElementById('total').innerText; 
+    const convertTotalAssigned = parseInt(totalAssigned);
+    const updatedTotalAssigned = convertTotalAssigned - 1;
+    document.getElementById('total').innerText = updatedTotalAssigned;
 
-   document.getElementById("three").innerHTML=`
+    const navTotalAssigned = document.getElementById('addTotal').innerText; 
+    const convertnavTotalAssigned = parseInt(navTotalAssigned);
+    const updatedNavTotalAssigned = convertnavTotalAssigned + 1;
+    document.getElementById('addTotal').innerText = updatedNavTotalAssigned;
+
+    document.getElementById("three").innerHTML = `
    <p class="bg-white p-4 w-fit rounded-md">You have completed the task Add new reaction at 1.35 AM</p>
    `;
-   document.getElementById("clearSms").addEventListener("click", function () {
-    document.getElementById("three").innerHTML = ""; 
-});
-    
+    document.getElementById("clearSms").addEventListener("click", function () {
+        document.getElementById("three").innerHTML = "";
+    });
+     
 })
-document.getElementById("four-btn").addEventListener("click", function () {
+// Four button part  
+
+ document.getElementById("four-btn").addEventListener("click", function () {
     alert("Board updated Successfully");
     const button = document.getElementById("four-btn");
     button.disabled = true;
     button.style.backgroundColor = "gray";
 
+    const totalAssigned = document.getElementById('total').innerText; 
+    const convertTotalAssigned = parseInt(totalAssigned);
+    const updatedTotalAssigned = convertTotalAssigned - 1;
+    document.getElementById('total').innerText = updatedTotalAssigned;
 
-   document.getElementById("four").innerHTML=`
+    const navTotalAssigned = document.getElementById('addTotal').innerText;
+    const convertnavTotalAssigned = parseInt(navTotalAssigned);
+    const updatedNavTotalAssigned = convertnavTotalAssigned + 1;
+    document.getElementById('addTotal').innerText = updatedNavTotalAssigned;
+
+    document.getElementById("four").innerHTML = `
    <p class="bg-white p-4 w-fit rounded-md">You have completed the task Add new emoji at 1.45 AM</p>
    `;
-   document.getElementById("clearSms").addEventListener("click", function () {
-    document.getElementById("four").innerHTML = ""; 
-});
-    
+    document.getElementById("clearSms").addEventListener("click", function () {
+        document.getElementById("four").innerHTML = "";
+    });   
 })
-document.getElementById("five-btn").addEventListener("click", function () {
+// Five button part
+    document.getElementById("five-btn").addEventListener("click", function () {
     alert("Board updated Successfully");
     const button = document.getElementById("five-btn");
     button.disabled = true;
     button.style.backgroundColor = "gray";
 
+    const totalAssigned = document.getElementById('total').innerText;  
+    const convertTotalAssigned = parseInt(totalAssigned);
+    const updatedTotalAssigned = convertTotalAssigned - 1;
+    document.getElementById('total').innerText = updatedTotalAssigned;
 
-   document.getElementById("five").innerHTML=`
+    const navTotalAssigned = document.getElementById('addTotal').innerText;
+    const convertnavTotalAssigned = parseInt(navTotalAssigned);
+    const updatedNavTotalAssigned = convertnavTotalAssigned + 1;
+    document.getElementById('addTotal').innerText = updatedNavTotalAssigned;
+
+
+    document.getElementById("five").innerHTML = `
    <p class="bg-white p-4 w-fit rounded-md">You have completed the task Integrate OpenAI API at 2.00 AM</p>
    `;
-   document.getElementById("clearSms").addEventListener("click", function () {
-    document.getElementById("five").innerHTML = ""; 
-});
-    
+    document.getElementById("clearSms").addEventListener("click", function () {
+        document.getElementById("five").innerHTML = "";
+    });
 })
-document.getElementById("six-btn").addEventListener("click", function () {
+// Six button part
+
+    document.getElementById("six-btn").addEventListener("click", function () {
     alert("Board updated Successfully");
     alert("congrates!!You have completed all the current task");
     const button = document.getElementById("six-btn");
     button.disabled = true;
     button.style.backgroundColor = "gray";
 
+    const totalAssigned = document.getElementById('total').innerText;
+    const convertTotalAssigned = parseInt(totalAssigned);
+    const updatedTotalAssigned = convertTotalAssigned - 1;
+    document.getElementById('total').innerText = updatedTotalAssigned;
 
-   document.getElementById("six").innerHTML=`
+    const navTotalAssigned = document.getElementById('addTotal').innerText;
+    const convertnavTotalAssigned = parseInt(navTotalAssigned);
+    const updatedNavTotalAssigned = convertnavTotalAssigned + 1;
+    document.getElementById('addTotal').innerText = updatedNavTotalAssigned;
+
+    document.getElementById("six").innerHTML = `
    <p class="bg-white p-4 w-fit rounded-md">You have completed the task Improve Job searching at 3.00 AM</p>
    `;
-   document.getElementById("clearSms").addEventListener("click", function () {
-    document.getElementById("six").innerHTML = ""; 
-});
-    
+    document.getElementById("clearSms").addEventListener("click", function () {
+        document.getElementById("six").innerHTML = "";
+    });
+
 })
 
 
